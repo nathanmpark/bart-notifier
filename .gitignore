@@ -1,0 +1,19 @@
+# vim
+
+*.sw[po]
+vim.session
+
+# node
+
+node_modules
+
+# autoenv
+
+.env
+
+# scratch
+
+scratch
+
+private_fixtures
+
