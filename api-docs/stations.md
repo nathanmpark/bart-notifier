@@ -2,7 +2,7 @@
 
 ## /stations
 
-
+get station information
 ### `GET`
 
 
@@ -33,7 +33,8 @@
 <td valign="top">
 <pre><code>{
   "type": "object"
-}</code></pre>
+}
+</code></pre>
 </td>
 </tr>
 
@@ -50,7 +51,8 @@
 <td valign="top">
 <pre><code>{
   "type": "object"
-}</code></pre>
+}
+</code></pre>
 </td>
 </tr>
 
@@ -67,7 +69,8 @@
 <td valign="top">
 <pre><code>{
   "type": "object"
-}</code></pre>
+}
+</code></pre>
 </td>
 </tr>
 
@@ -84,7 +87,8 @@
 <td valign="top">
 <pre><code>{
   "type": "integer"
-}</code></pre>
+}
+</code></pre>
 </td>
 </tr>
 
@@ -101,7 +105,8 @@
 <td valign="top">
 <pre><code>{
   "type": "integer"
-}</code></pre>
+}
+</code></pre>
 </td>
 </tr>
 
@@ -119,7 +124,8 @@
 <pre><code>{
   "type": "array",
   "items": {}
-}</code></pre>
+}
+</code></pre>
 
 
 

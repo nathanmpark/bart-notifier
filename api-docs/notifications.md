@@ -2,7 +2,7 @@
 
 ## /notifications
 
-
+Arrival notifications.
 ### `GET`
 
 List active arrival notifications.
@@ -23,23 +23,6 @@ List active arrival notifications.
 
 
 <tr>
-<td valign="top"> X-Bart-Notifier-API-Key </td>
-<td valign="top"> user API key required for notification management </td>
-<td valign="top"> yes </td>
-<td valign="top"> query </td>
-<td valign="top"> 
-<code>null</code>
-</td>
-<td valign="top">
-<pre><code>{
-  "type": "string"
-}</code></pre>
-</td>
-</tr>
-
-
-
-<tr>
 <td valign="top"> destination </td>
 <td valign="top"> Filter results by destination. </td>
 <td valign="top"> no </td>
@@ -51,7 +34,8 @@ List active arrival notifications.
 <pre><code>{
   "type": "string",
   "pattern": "^[a-zA-Z0-9]{4}$"
-}</code></pre>
+}
+</code></pre>
 </td>
 </tr>
 
@@ -69,7 +53,8 @@ List active arrival notifications.
 <pre><code>{
   "type": "integer",
   "minimum": 0
-}</code></pre>
+}
+</code></pre>
 </td>
 </tr>
 
@@ -87,7 +72,8 @@ List active arrival notifications.
 <pre><code>{
   "type": "integer",
   "minimum": 1
-}</code></pre>
+}
+</code></pre>
 </td>
 </tr>
 
@@ -129,12 +115,13 @@ List active arrival notifications.
       }
     }
   }
-}</code></pre>
+}
+</code></pre>
 
 
 ### `POST`
 
-create a new notification
+Create a new notification.
 ### Parameters
 
 ---
@@ -152,26 +139,8 @@ create a new notification
 
 
 <tr>
-<td valign="top"> X-Bart-Notifier-API-Key </td>
-<td valign="top"> user API key required for notification management </td>
-<td valign="top"> yes </td>
-<td valign="top"> query </td>
-<td valign="top"> 
-<code>null</code>
-</td>
-<td valign="top">
-<pre><code>{
-  "type": "string"
-}</code></pre>
-</td>
-</tr>
-
-
-
-
-<tr>
 <td valign="top"> body </td>
-<td valign="top"> create a notification </td>
+<td valign="top"> Notification object </td>
 <td valign="top"> yes </td>
 <td valign="top"> body </td>
 <td valign="top"> 
@@ -203,8 +172,16 @@ create a new notification
       "minimum": 10,
       "maximum": 30
     }
-  }
-}</code></pre>
+  },
+  "required": [
+    "station",
+    "destination",
+    "datetime",
+    "delta"
+  ],
+  "additionalProperties": false
+}
+</code></pre>
 </td>
 </tr>
 
@@ -221,48 +198,13 @@ create a new notification
 
 <pre><code>{
   "type": "object"
-}</code></pre>
+}
+</code></pre>
 
 
 ### `DELETE`
 
 Cancel all active notifications.
-### Parameters
-
----
-
-<table>
-<tr>
-<th> name </th>
-<th> description </th>
-<th> required </th>
-<th> location </th>
-<th> default </th>
-<th> schema </th>
-</tr>
-
-
-
-<tr>
-<td valign="top"> X-Bart-Notifier-API-Key </td>
-<td valign="top"> user API key required for notification management </td>
-<td valign="top"> yes </td>
-<td valign="top"> query </td>
-<td valign="top"> 
-<code>null</code>
-</td>
-<td valign="top">
-<pre><code>{
-  "type": "string"
-}</code></pre>
-</td>
-</tr>
-
-
-
-</table>
-
-
 
 
 

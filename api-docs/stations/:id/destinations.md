@@ -2,7 +2,7 @@
 
 ## /stations/:id/destinations
 
-
+Per station destinations.
 ### `GET`
 
 Retrieve a list of valid destinations for a particular station.
@@ -31,7 +31,8 @@ Retrieve a list of valid destinations for a particular station.
 <code>null</code>
 </td>
 <td valign="top">
-<pre><code>{}</code></pre>
+<pre><code>{}
+</code></pre>
 </td>
 </tr>
 
@@ -53,7 +54,8 @@ Retrieve a list of valid destinations for a particular station.
     "pattern": "^[a-zA-Z0-9]{4}$"
   },
   "additionalItems": false
-}</code></pre>
+}
+</code></pre>
 
 
 

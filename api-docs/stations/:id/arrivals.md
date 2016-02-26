@@ -2,7 +2,7 @@
 
 ## /stations/:id/arrivals
 
-
+Per station estimated arrival times.
 ### `GET`
 
 Retrieve a list of estimated arrival times for a particular station
@@ -31,25 +31,8 @@ Retrieve a list of estimated arrival times for a particular station
 <code>null</code>
 </td>
 <td valign="top">
-<pre><code>{}</code></pre>
-</td>
-</tr>
-
-
-
-<tr>
-<td valign="top"> :id </td>
-<td valign="top"> The station id. </td>
-<td valign="top"> yes </td>
-<td valign="top"> path </td>
-<td valign="top"> 
-<code>null</code>
-</td>
-<td valign="top">
-<pre><code>{
-  "type": "string",
-  "pattern": "^[a-zA-Z0-9]{4}$"
-}</code></pre>
+<pre><code>{}
+</code></pre>
 </td>
 </tr>
 
@@ -59,7 +42,7 @@ Retrieve a list of estimated arrival times for a particular station
 <tr>
 <td valign="top"> destination </td>
 <td valign="top"> Filter results by destination (e.g., &quot;RICH&quot; for all Richmond bound trains) </td>
-<td valign="top"> yes </td>
+<td valign="top"> no </td>
 <td valign="top"> query </td>
 <td valign="top"> 
 <code>null</code>
@@ -68,7 +51,8 @@ Retrieve a list of estimated arrival times for a particular station
 <pre><code>{
   "type": "string",
   "pattern": "^[a-zA-Z0-9]{4}$"
-}</code></pre>
+}
+</code></pre>
 </td>
 </tr>
 
@@ -92,7 +76,8 @@ Retrieve a list of estimated arrival times for a particular station
       }
     }
   }
-}</code></pre>
+}
+</code></pre>
 
 
 
