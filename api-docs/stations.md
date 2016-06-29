@@ -5,7 +5,7 @@
 get station information
 ### `GET`
 
-
+Find objects in this Collection.
 ### Parameters
 
 ---
@@ -28,11 +28,29 @@ get station information
 <td valign="top"> no </td>
 <td valign="top"> query </td>
 <td valign="top"> 
-<code>{}</code>
+<code>null</code>
 </td>
 <td valign="top">
 <pre><code>{
   "type": "object"
+}
+</code></pre>
+</td>
+</tr>
+
+
+
+<tr>
+<td valign="top"> view </td>
+<td valign="top"> View </td>
+<td valign="top"> no </td>
+<td valign="top"> query </td>
+<td valign="top"> 
+<code>null</code>
+</td>
+<td valign="top">
+<pre><code>{
+  "type": "string"
 }
 </code></pre>
 </td>
@@ -117,15 +135,6 @@ get station information
 
 
 
-### Response Schema
-
----
-
-<pre><code>{
-  "type": "array",
-  "items": {}
-}
-</code></pre>
 
 
 

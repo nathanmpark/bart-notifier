@@ -2,13 +2,13 @@
     "name": "bart-notifier",
     "description": "Bart Notifier API",
     "dependencies": {
-        "carbon-io": ">=0.1.2",
+        "carbon-io": "git+ssh://git@github.com:carbon-io/carbon-io.git#master",
         
-        "leafnode": ">=2.1.6",
+        "leafnode": "git+ssh://git@github.com:objectlabs/leafnode.git#v3.2.0",
         "mongodb-uri": "git+ssh://git@github.com:mongolab/mongodb-uri-node.git#v0.9.7",
         "fibrous": "git+ssh://git@github.com:carbon-io/fibrous.git#v0.4.1-ml",
 
-        "lodash": ">=3.10.1",
+        "lodash": "^4.0",
         "twilio": ">=2.3.0",
         "xml2js": ">=0.4.11"
     }

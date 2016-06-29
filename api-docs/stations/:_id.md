@@ -1,11 +1,11 @@
 [back to ToC](/api-docs/index.md)
 
-## /stations/:id/destinations
+## /stations/:_id
 
-Per station destinations.
+
 ### `GET`
 
-Retrieve a list of valid destinations for a particular station.
+Find an object in this Collection by _id.
 ### Parameters
 
 ---
@@ -23,7 +23,7 @@ Retrieve a list of valid destinations for a particular station.
 
 
 <tr>
-<td valign="top"> id </td>
+<td valign="top"> _id </td>
 <td valign="top"> Object _id </td>
 <td valign="top"> yes </td>
 <td valign="top"> path </td>
@@ -31,7 +31,24 @@ Retrieve a list of valid destinations for a particular station.
 <code>null</code>
 </td>
 <td valign="top">
-<pre><code>{}
+<code>null</code></td>
+</tr>
+
+
+
+
+<tr>
+<td valign="top"> view </td>
+<td valign="top"> View </td>
+<td valign="top"> no </td>
+<td valign="top"> query </td>
+<td valign="top"> 
+<code>null</code>
+</td>
+<td valign="top">
+<pre><code>{
+  "type": "string"
+}
 </code></pre>
 </td>
 </tr>
@@ -43,19 +60,6 @@ Retrieve a list of valid destinations for a particular station.
 
 
 
-### Response Schema
-
----
-
-<pre><code>{
-  "type": "array",
-  "items": {
-    "type": "string",
-    "pattern": "^[a-zA-Z0-9]{4}$"
-  },
-  "additionalItems": false
-}
-</code></pre>
 
 
 

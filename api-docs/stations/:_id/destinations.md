@@ -1,11 +1,11 @@
 [back to ToC](/api-docs/index.md)
 
-## /stations/:id
+## /stations/:_id/destinations
 
-
+Per station destinations.
 ### `GET`
 
-
+Retrieve a list of valid destinations for a particular station.
 ### Parameters
 
 ---
@@ -23,7 +23,7 @@
 
 
 <tr>
-<td valign="top"> id </td>
+<td valign="top"> _id </td>
 <td valign="top"> Object _id </td>
 <td valign="top"> yes </td>
 <td valign="top"> path </td>
@@ -31,9 +31,7 @@
 <code>null</code>
 </td>
 <td valign="top">
-<pre><code>{}
-</code></pre>
-</td>
+<code>null</code></td>
 </tr>
 
 

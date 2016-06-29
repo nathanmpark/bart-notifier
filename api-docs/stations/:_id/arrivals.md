@@ -1,6 +1,6 @@
 [back to ToC](/api-docs/index.md)
 
-## /stations/:id/arrivals
+## /stations/:_id/arrivals
 
 Per station estimated arrival times.
 ### `GET`
@@ -23,7 +23,7 @@ Retrieve a list of estimated arrival times for a particular station
 
 
 <tr>
-<td valign="top"> id </td>
+<td valign="top"> _id </td>
 <td valign="top"> Object _id </td>
 <td valign="top"> yes </td>
 <td valign="top"> path </td>
@@ -31,9 +31,7 @@ Retrieve a list of estimated arrival times for a particular station
 <code>null</code>
 </td>
 <td valign="top">
-<pre><code>{}
-</code></pre>
-</td>
+<code>null</code></td>
 </tr>
 
 
@@ -63,21 +61,6 @@ Retrieve a list of estimated arrival times for a particular station
 
 
 
-### Response Schema
-
----
-
-<pre><code>{
-  "type": "object",
-  "properties": {
-    "patternProperties": {
-      "^[a-zA-Z0-9]{4}$": {
-        "type": "string"
-      }
-    }
-  }
-}
-</code></pre>
 
 
 

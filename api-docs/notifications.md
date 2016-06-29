@@ -84,39 +84,6 @@ List active arrival notifications.
 
 
 
-### Response Schema
-
----
-
-<pre><code>{
-  "type": "array",
-  "items": {
-    "type": "object",
-    "properties": {
-      "id": {
-        "type": "string"
-      },
-      "station": {
-        "type": "string",
-        "pattern": "^[a-zA-Z0-9]{4}$"
-      },
-      "destination": {
-        "type": "string",
-        "pattern": "^[a-zA-Z0-9]{4}$"
-      },
-      "datetime": {
-        "type": "string"
-      },
-      "notified": {
-        "type": "boolean"
-      },
-      "delta": {
-        "type": "integer"
-      }
-    }
-  }
-}
-</code></pre>
 
 
 ### `POST`
@@ -192,14 +159,6 @@ Create a new notification.
 
 
 
-### Response Schema
-
----
-
-<pre><code>{
-  "type": "object"
-}
-</code></pre>
 
 
 ### `DELETE`

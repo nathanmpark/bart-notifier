@@ -2,10 +2,10 @@
 
 var carbon = require('carbon-io')
 var o = carbon.atom.o(module)
-var __ = carbon.fiber.__(module, true)
+var __ = carbon.fiber.__.main(module)
 
 var bns = require('../lib/BartNotifierService')
 
 __(function (){
-    module.exports = o(bns)
+    module.exports = o.main(bns)
 })
