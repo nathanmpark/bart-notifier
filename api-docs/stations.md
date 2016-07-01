@@ -152,7 +152,7 @@ Find objects in this Collection.
 Returns an array of objects. Each object has an _id and possible additional properties.
 </td>
 <td>
-<pre>""
+<pre>null
 </pre>
 </td>
 <td>
@@ -181,7 +181,7 @@ Returns an array of objects. Each object has an _id and possible additional prop
 Request is malformed (i.e. invalid parameters).
 </td>
 <td>
-<pre>""
+<pre>null
 </pre>
 </td>
 <td>
@@ -215,7 +215,7 @@ Request is malformed (i.e. invalid parameters).
 User is not authorized to run this operation.
 </td>
 <td>
-<pre>""
+<pre>null
 </pre>
 </td>
 <td>
@@ -249,7 +249,7 @@ User is not authorized to run this operation.
 There was an unexpected internal error processing this request.
 </td>
 <td>
-<pre>""
+<pre>null
 </pre>
 </td>
 <td>
