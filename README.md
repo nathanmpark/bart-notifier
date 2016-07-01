@@ -4,12 +4,12 @@
 An API to query up-to-date arrival times and schedule arrival notifications
 
 ---
-* <a name="stations-toc"></a> [/stations](#stations) [<a name="stations-get-toc"></a>[GET](#stations-get)]
-* <a name="stations--id-toc"></a> [/stations/:id](#stations--id)
-* <a name="stations--id-destinations-toc"></a> [/stations/:id/destinations](#stations--id-destinations) [<a name="stations--id-destinations-get-toc"></a>[GET](#stations--id-destinations-get)]
-* <a name="stations--id-arrivals-toc"></a> [/stations/:id/arrivals](#stations--id-arrivals) [<a name="stations--id-arrivals-get-toc"></a>[GET](#stations--id-arrivals-get)]
-* <a name="notifications-toc"></a> [/notifications](#notifications) [<a name="notifications-get-toc"></a>[GET](#notifications-get)] [<a name="notifications-post-toc"></a>[POST](#notifications-post)] [<a name="notifications-delete-toc"></a>[DELETE](#notifications-delete)]
-* <a name="notifications--id-toc"></a> [/notifications/:id](#notifications--id) [<a name="notifications--id-get-toc"></a>[GET](#notifications--id-get)]
+* <a name="stations-toc"></a> [/stations](#stations) [<a name="-get-toc"></a>[GET](#-get)]
+* <a name="stations--_id-toc"></a> [/stations/:_id](#stations--_id) [<a name="-get-toc"></a>[GET](#-get)]
+* <a name="stations--_id-destinations-toc"></a> [/stations/:_id/destinations](#stations--_id-destinations) [<a name="-get-toc"></a>[GET](#-get)]
+* <a name="stations--_id-arrivals-toc"></a> [/stations/:_id/arrivals](#stations--_id-arrivals) [<a name="-get-toc"></a>[GET](#-get)]
+* <a name="notifications-toc"></a> [/notifications](#notifications) [<a name="-get-toc"></a>[GET](#-get)] [<a name="-post-toc"></a>[POST](#-post)] [<a name="-delete-toc"></a>[DELETE](#-delete)]
+* <a name="notifications--id-toc"></a> [/notifications/:id](#notifications--id) [<a name="-get-toc"></a>[GET](#-get)] [<a name="-patch-toc"></a>[PATCH](#-patch)] [<a name="-delete-toc"></a>[DELETE](#-delete)]
 
 
 ---
@@ -17,10 +17,10 @@ An API to query up-to-date arrival times and schedule arrival notifications
 
 ## <a name="stations"></a>/stations [[&#x2191;](#stations-toc)]
 
+get station information
+### <a name="-get"></a>`GET` --   [[&#x2191;](#-get-toc)]
 
-### <a name="stations-get"></a>`GET` -- /stations  [[&#x2191;](#stations-get-toc)]
-
-
+Find objects in this Collection.
 ### Parameters
 
 ---
@@ -42,8 +42,8 @@ An API to query up-to-date arrival times and schedule arrival notifications
 <td valign="top"> Query spec (JSON) </td>
 <td valign="top"> no </td>
 <td valign="top"> query </td>
-<td valign="top"> 
-<code>{}</code>
+<td valign="top">
+<code>null</code>
 </td>
 <td valign="top">
 <pre><code>{
@@ -56,11 +56,29 @@ An API to query up-to-date arrival times and schedule arrival notifications
 
 
 <tr>
+<td valign="top"> view </td>
+<td valign="top"> View </td>
+<td valign="top"> no </td>
+<td valign="top"> query </td>
+<td valign="top">
+<code>null</code>
+</td>
+<td valign="top">
+<pre><code>{
+  "type": "string"
+}</code></pre>
+</td>
+</tr>
+
+
+
+
+<tr>
 <td valign="top"> sort </td>
 <td valign="top"> Sort spec (JSON) </td>
 <td valign="top"> no </td>
 <td valign="top"> query </td>
-<td valign="top"> 
+<td valign="top">
 <code>null</code>
 </td>
 <td valign="top">
@@ -78,7 +96,7 @@ An API to query up-to-date arrival times and schedule arrival notifications
 <td valign="top"> Fields spec (JSON) </td>
 <td valign="top"> no </td>
 <td valign="top"> query </td>
-<td valign="top"> 
+<td valign="top">
 <code>null</code>
 </td>
 <td valign="top">
@@ -96,7 +114,7 @@ An API to query up-to-date arrival times and schedule arrival notifications
 <td valign="top"> Results to skip </td>
 <td valign="top"> no </td>
 <td valign="top"> query </td>
-<td valign="top"> 
+<td valign="top">
 <code>null</code>
 </td>
 <td valign="top">
@@ -114,7 +132,7 @@ An API to query up-to-date arrival times and schedule arrival notifications
 <td valign="top"> Results to limit </td>
 <td valign="top"> no </td>
 <td valign="top"> query </td>
-<td valign="top"> 
+<td valign="top">
 <code>null</code>
 </td>
 <td valign="top">
@@ -132,25 +150,77 @@ An API to query up-to-date arrival times and schedule arrival notifications
 
 
 
-### Response Schema
+
+
+
+## <a name="stations--_id"></a>/stations/:_id [[&#x2191;](#stations--_id-toc)]
+
+
+### <a name="-get"></a>`GET` --   [[&#x2191;](#-get-toc)]
+
+Find an object in this Collection by _id.
+### Parameters
 
 ---
 
+<table>
+<tr>
+<th> name </th>
+<th> description </th>
+<th> required </th>
+<th> location </th>
+<th> default </th>
+<th> schema </th>
+</tr>
+
+
+
+<tr>
+<td valign="top"> _id </td>
+<td valign="top"> Object _id </td>
+<td valign="top"> yes </td>
+<td valign="top"> path </td>
+<td valign="top">
+<code>null</code>
+</td>
+<td valign="top">
+<code>null</code></td>
+</tr>
+
+
+
+
+
+<tr>
+<td valign="top"> view </td>
+<td valign="top"> View </td>
+<td valign="top"> no </td>
+<td valign="top"> query </td>
+<td valign="top">
+<code>null</code>
+</td>
+<td valign="top">
 <pre><code>{
-  "type": "array",
-  "items": {}
+  "type": "string"
 }</code></pre>
+</td>
+</tr>
 
 
 
-## <a name="stations--id"></a>/stations/:id [[&#x2191;](#stations--id-toc)]
+
+</table>
 
 
 
-## <a name="stations--id-destinations"></a>/stations/:id/destinations [[&#x2191;](#stations--id-destinations-toc)]
 
 
-### <a name="stations--id-destinations-get"></a>`GET` -- /stations/:id/destinations  [[&#x2191;](#stations--id-destinations-get-toc)]
+
+
+## <a name="stations--_id-destinations"></a>/stations/:_id/destinations [[&#x2191;](#stations--_id-destinations-toc)]
+
+Per station destinations.
+### <a name="-get"></a>`GET` --   [[&#x2191;](#-get-toc)]
 
 Retrieve a list of valid destinations for a particular station.
 ### Parameters
@@ -170,16 +240,15 @@ Retrieve a list of valid destinations for a particular station.
 
 
 <tr>
-<td valign="top"> id </td>
+<td valign="top"> _id </td>
 <td valign="top"> Object _id </td>
 <td valign="top"> yes </td>
 <td valign="top"> path </td>
-<td valign="top"> 
+<td valign="top">
 <code>null</code>
 </td>
 <td valign="top">
-<pre><code>{}</code></pre>
-</td>
+<code>null</code></td>
 </tr>
 
 
@@ -190,25 +259,13 @@ Retrieve a list of valid destinations for a particular station.
 
 
 
-### Response Schema
-
----
-
-<pre><code>{
-  "type": "array",
-  "items": {
-    "type": "string",
-    "pattern": "^[a-zA-Z0-9]{4}$"
-  },
-  "additionalItems": false
-}</code></pre>
 
 
 
-## <a name="stations--id-arrivals"></a>/stations/:id/arrivals [[&#x2191;](#stations--id-arrivals-toc)]
+## <a name="stations--_id-arrivals"></a>/stations/:_id/arrivals [[&#x2191;](#stations--_id-arrivals-toc)]
 
-
-### <a name="stations--id-arrivals-get"></a>`GET` -- /stations/:id/arrivals  [[&#x2191;](#stations--id-arrivals-get-toc)]
+Per station estimated arrival times.
+### <a name="-get"></a>`GET` --   [[&#x2191;](#-get-toc)]
 
 Retrieve a list of estimated arrival times for a particular station
 ### Parameters
@@ -228,35 +285,15 @@ Retrieve a list of estimated arrival times for a particular station
 
 
 <tr>
-<td valign="top"> id </td>
+<td valign="top"> _id </td>
 <td valign="top"> Object _id </td>
 <td valign="top"> yes </td>
 <td valign="top"> path </td>
-<td valign="top"> 
+<td valign="top">
 <code>null</code>
 </td>
 <td valign="top">
-<pre><code>{}</code></pre>
-</td>
-</tr>
-
-
-
-
-<tr>
-<td valign="top"> :id </td>
-<td valign="top"> The station id. </td>
-<td valign="top"> yes </td>
-<td valign="top"> path </td>
-<td valign="top"> 
-<code>null</code>
-</td>
-<td valign="top">
-<pre><code>{
-  "type": "string",
-  "pattern": "^[a-zA-Z0-9]{4}$"
-}</code></pre>
-</td>
+<code>null</code></td>
 </tr>
 
 
@@ -266,9 +303,9 @@ Retrieve a list of estimated arrival times for a particular station
 <tr>
 <td valign="top"> destination </td>
 <td valign="top"> Filter results by destination (e.g., &quot;RICH&quot; for all Richmond bound trains) </td>
-<td valign="top"> yes </td>
+<td valign="top"> no </td>
 <td valign="top"> query </td>
-<td valign="top"> 
+<td valign="top">
 <code>null</code>
 </td>
 <td valign="top">
@@ -287,27 +324,13 @@ Retrieve a list of estimated arrival times for a particular station
 
 
 
-### Response Schema
-
----
-
-<pre><code>{
-  "type": "object",
-  "properties": {
-    "patternProperties": {
-      "^[a-zA-Z0-9]{4}$": {
-        "type": "string"
-      }
-    }
-  }
-}</code></pre>
 
 
 
 ## <a name="notifications"></a>/notifications [[&#x2191;](#notifications-toc)]
 
-
-### <a name="notifications-get"></a>`GET` -- /notifications  [[&#x2191;](#notifications-get-toc)]
+Arrival notifications.
+### <a name="-get"></a>`GET` --   [[&#x2191;](#-get-toc)]
 
 List active arrival notifications.
 ### Parameters
@@ -327,29 +350,11 @@ List active arrival notifications.
 
 
 <tr>
-<td valign="top"> X-Bart-Notifier-API-Key </td>
-<td valign="top"> user API key required for notification management </td>
-<td valign="top"> yes </td>
-<td valign="top"> query </td>
-<td valign="top"> 
-<code>null</code>
-</td>
-<td valign="top">
-<pre><code>{
-  "type": "string"
-}</code></pre>
-</td>
-</tr>
-
-
-
-
-<tr>
 <td valign="top"> destination </td>
 <td valign="top"> Filter results by destination. </td>
 <td valign="top"> no </td>
 <td valign="top"> query </td>
-<td valign="top"> 
+<td valign="top">
 <code>null</code>
 </td>
 <td valign="top">
@@ -368,8 +373,8 @@ List active arrival notifications.
 <td valign="top"> Skip the first N results. </td>
 <td valign="top"> no </td>
 <td valign="top"> query </td>
-<td valign="top"> 
-<code></code>
+<td valign="top">
+<code>0</code>
 </td>
 <td valign="top">
 <pre><code>{
@@ -387,8 +392,8 @@ List active arrival notifications.
 <td valign="top"> Limit the number of results returned. </td>
 <td valign="top"> no </td>
 <td valign="top"> query </td>
-<td valign="top"> 
-<code></code>
+<td valign="top">
+<code>10</code>
 </td>
 <td valign="top">
 <pre><code>{
@@ -406,43 +411,11 @@ List active arrival notifications.
 
 
 
-### Response Schema
-
----
-
-<pre><code>{
-  "type": "array",
-  "items": {
-    "type": "object",
-    "properties": {
-      "id": {
-        "type": "string"
-      },
-      "station": {
-        "type": "string",
-        "pattern": "^[a-zA-Z0-9]{4}$"
-      },
-      "destination": {
-        "type": "string",
-        "pattern": "^[a-zA-Z0-9]{4}$"
-      },
-      "datetime": {
-        "type": "string"
-      },
-      "notified": {
-        "type": "boolean"
-      },
-      "delta": {
-        "type": "integer"
-      }
-    }
-  }
-}</code></pre>
 
 
-### <a name="notifications-post"></a>`POST` -- /notifications  [[&#x2191;](#notifications-post-toc)]
+### <a name="-post"></a>`POST` --   [[&#x2191;](#-post-toc)]
 
-create a new notification
+Create a new notification.
 ### Parameters
 
 ---
@@ -460,30 +433,11 @@ create a new notification
 
 
 <tr>
-<td valign="top"> X-Bart-Notifier-API-Key </td>
-<td valign="top"> user API key required for notification management </td>
+<td valign="top"> body </td>
+<td valign="top"> Notification object </td>
 <td valign="top"> yes </td>
-<td valign="top"> query </td>
-<td valign="top"> 
-<code>null</code>
-</td>
+<td valign="top"> body </td>
 <td valign="top">
-<pre><code>{
-  "type": "string"
-}</code></pre>
-</td>
-</tr>
-
-
-
-
-
-<tr>
-<td valign="top"> body </td>
-<td valign="top"> create a notification </td>
-<td valign="top"> yes </td>
-<td valign="top"> body </td>
-<td valign="top"> 
 <code>null</code>
 </td>
 <td valign="top">
@@ -512,7 +466,14 @@ create a new notification
       "minimum": 10,
       "maximum": 30
     }
-  }
+  },
+  "required": [
+    "station",
+    "destination",
+    "datetime",
+    "delta"
+  ],
+  "additionalProperties": false
 }</code></pre>
 </td>
 </tr>
@@ -525,55 +486,11 @@ create a new notification
 
 
 
-### Response Schema
-
----
-
-<pre><code>{
-  "type": "object"
-}</code></pre>
 
 
-### <a name="notifications-delete"></a>`DELETE` -- /notifications  [[&#x2191;](#notifications-delete-toc)]
+### <a name="-delete"></a>`DELETE` --   [[&#x2191;](#-delete-toc)]
 
 Cancel all active notifications.
-### Parameters
-
----
-
-<table>
-<tr>
-<th> name </th>
-<th> description </th>
-<th> required </th>
-<th> location </th>
-<th> default </th>
-<th> schema </th>
-</tr>
-
-
-
-<tr>
-<td valign="top"> X-Bart-Notifier-API-Key </td>
-<td valign="top"> user API key required for notification management </td>
-<td valign="top"> yes </td>
-<td valign="top"> query </td>
-<td valign="top"> 
-<code>null</code>
-</td>
-<td valign="top">
-<pre><code>{
-  "type": "string"
-}</code></pre>
-</td>
-</tr>
-
-
-
-
-</table>
-
-
 
 
 
@@ -581,8 +498,8 @@ Cancel all active notifications.
 
 ## <a name="notifications--id"></a>/notifications/:id [[&#x2191;](#notifications--id-toc)]
 
-
-### <a name="notifications--id-get"></a>`GET` -- /notifications/:id  [[&#x2191;](#notifications--id-get-toc)]
+Arrival notification details.
+### <a name="-get"></a>`GET` --   [[&#x2191;](#-get-toc)]
 
 Retrieve a specific notification.
 ### Parameters
@@ -602,38 +519,17 @@ Retrieve a specific notification.
 
 
 <tr>
-<td valign="top"> :id </td>
-<td valign="top"> The notification ID. </td>
+<td valign="top"> id </td>
+<td valign="top"> id </td>
 <td valign="top"> yes </td>
 <td valign="top"> path </td>
-<td valign="top"> 
+<td valign="top">
 <code>null</code>
 </td>
 <td valign="top">
-<pre><code>{
-  "type": "string"
-}</code></pre>
-</td>
+<code>null</code></td>
 </tr>
 
-
-
-
-
-<tr>
-<td valign="top"> X-Bart-Notifier-API-Key </td>
-<td valign="top"> user API key required for notification management </td>
-<td valign="top"> yes </td>
-<td valign="top"> query </td>
-<td valign="top"> 
-<code>null</code>
-</td>
-<td valign="top">
-<pre><code>{
-  "type": "string"
-}</code></pre>
-</td>
-</tr>
 
 
 
@@ -643,7 +539,7 @@ Retrieve a specific notification.
 <td valign="top"> Filter by destination ID. </td>
 <td valign="top"> no </td>
 <td valign="top"> query </td>
-<td valign="top"> 
+<td valign="top">
 <code>null</code>
 </td>
 <td valign="top">
@@ -662,34 +558,151 @@ Retrieve a specific notification.
 
 
 
-### Response Schema
+
+
+### <a name="-patch"></a>`PATCH` --   [[&#x2191;](#-patch-toc)]
+
+Update a notification.
+### Parameters
 
 ---
 
+<table>
+<tr>
+<th> name </th>
+<th> description </th>
+<th> required </th>
+<th> location </th>
+<th> default </th>
+<th> schema </th>
+</tr>
+
+
+
+<tr>
+<td valign="top"> id </td>
+<td valign="top"> id </td>
+<td valign="top"> yes </td>
+<td valign="top"> path </td>
+<td valign="top">
+<code>null</code>
+</td>
+<td valign="top">
+<code>null</code></td>
+</tr>
+
+
+
+
+
+<tr>
+<td valign="top"> body </td>
+<td valign="top"> Notification object. </td>
+<td valign="top"> yes </td>
+<td valign="top"> body </td>
+<td valign="top">
+<code>null</code>
+</td>
+<td valign="top">
 <pre><code>{
   "type": "object",
   "properties": {
-    "id": {
-      "type": "string"
-    },
     "station": {
-      "type": "string",
-      "pattern": "^[a-zA-Z0-9]{4}$"
+      "type": "string"
     },
     "destination": {
-      "type": "string",
-      "pattern": "^[a-zA-Z0-9]{4}$"
-    },
-    "datetime": {
       "type": "string"
     },
-    "notified": {
-      "type": "boolean"
+    "datetime": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "integer",
+          "minimum": 0
+        }
+      ]
     },
     "delta": {
-      "type": "integer"
+      "type": "integer",
+      "minimum": 10,
+      "maximum": 30
     }
-  }
+  },
+  "minProperties": 1,
+  "additionalProperties": false
 }</code></pre>
+</td>
+</tr>
+
+
+
+
+
+<tr>
+<td valign="top"> bart-key </td>
+<td valign="top"> test header </td>
+<td valign="top"> no </td>
+<td valign="top"> header </td>
+<td valign="top">
+<code>null</code>
+</td>
+<td valign="top">
+<pre><code>{
+  "type": "string"
+}</code></pre>
+</td>
+</tr>
+
+
+
+
+</table>
+
+
+
+
+
+
+### <a name="-delete"></a>`DELETE` --   [[&#x2191;](#-delete-toc)]
+
+Cancel a specific notification.
+### Parameters
+
+---
+
+<table>
+<tr>
+<th> name </th>
+<th> description </th>
+<th> required </th>
+<th> location </th>
+<th> default </th>
+<th> schema </th>
+</tr>
+
+
+
+<tr>
+<td valign="top"> id </td>
+<td valign="top"> id </td>
+<td valign="top"> yes </td>
+<td valign="top"> path </td>
+<td valign="top">
+<code>null</code>
+</td>
+<td valign="top">
+<code>null</code></td>
+</tr>
+
+
+
+
+</table>
+
+
+
+
 
 
