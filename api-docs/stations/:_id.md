@@ -58,9 +58,174 @@ Find an object in this Collection by _id.
 </table>
 
 
+### Responses
 
+---
 
+<table>
+<tr>
+<th> name </th>
+<th> description </th>
+<th> headers </th>
+<th> schema </th>
+</tr>
+<tr>
 
+</tr>
+<tr>
+Returns the object resource found at this URL specified by id.
+</tr>
+<tr>
+<pre>
+Returns the object resource found at this URL specified by id.
+</pre>
+</tr>
+<tr>
+<pre><code>{
+  "type": "object",
+  "properties": {
+    "_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "_id"
+  ]
+}
+</code></pre>
+</tr>
+<tr>
+
+</tr>
+<tr>
+Collection resource cannot be found by the supplied _id.
+</tr>
+<tr>
+<pre>
+Collection resource cannot be found by the supplied _id.
+</pre>
+</tr>
+<tr>
+<pre><code>{
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "code",
+    "description",
+    "message"
+  ]
+}
+</code></pre>
+</tr>
+<tr>
+
+</tr>
+<tr>
+Request is malformed (i.e. invalid parameters).
+</tr>
+<tr>
+<pre>
+Request is malformed (i.e. invalid parameters).
+</pre>
+</tr>
+<tr>
+<pre><code>{
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "code",
+    "description",
+    "message"
+  ]
+}
+</code></pre>
+</tr>
+<tr>
+
+</tr>
+<tr>
+User is not authorized to run this operation.
+</tr>
+<tr>
+<pre>
+User is not authorized to run this operation.
+</pre>
+</tr>
+<tr>
+<pre><code>{
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "code",
+    "description",
+    "message"
+  ]
+}
+</code></pre>
+</tr>
+<tr>
+
+</tr>
+<tr>
+There was an unexpected internal error processing this request.
+</tr>
+<tr>
+<pre>
+There was an unexpected internal error processing this request.
+</pre>
+</tr>
+<tr>
+<pre><code>{
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "code",
+    "description",
+    "message"
+  ]
+}
+</code></pre>
+</tr>
 
 
 [back to ToC](/api-docs/index.md)

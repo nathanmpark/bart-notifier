@@ -60,9 +60,6 @@ Retrieve a specific notification.
 
 
 
-
-
-
 ### `PATCH`
 
 Update a notification.
@@ -164,9 +161,6 @@ Update a notification.
 
 
 
-
-
-
 ### `DELETE`
 
 Cancel a specific notification.
@@ -201,9 +195,6 @@ Cancel a specific notification.
 
 
 </table>
-
-
-
 
 
 

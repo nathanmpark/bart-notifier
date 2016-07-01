@@ -61,7 +61,4 @@ Retrieve a list of estimated arrival times for a particular station
 
 
 
-
-
-
 [back to ToC](/api-docs/index.md)

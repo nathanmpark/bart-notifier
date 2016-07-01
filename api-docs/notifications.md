@@ -83,9 +83,6 @@ List active arrival notifications.
 
 
 
-
-
-
 ### `POST`
 
 Create a new notification.
@@ -158,13 +155,9 @@ Create a new notification.
 
 
 
-
-
-
 ### `DELETE`
 
 Cancel all active notifications.
-
 
 
 

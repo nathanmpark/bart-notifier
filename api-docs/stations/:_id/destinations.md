@@ -41,7 +41,4 @@ Retrieve a list of valid destinations for a particular station.
 
 
 
-
-
-
 [back to ToC](/api-docs/index.md)
