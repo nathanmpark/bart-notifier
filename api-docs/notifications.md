@@ -47,7 +47,7 @@ List active arrival notifications.
 <td valign="top"> no </td>
 <td valign="top"> query </td>
 <td valign="top"> 
-<code></code>
+<code>0</code>
 </td>
 <td valign="top">
 <pre><code>{
@@ -66,7 +66,7 @@ List active arrival notifications.
 <td valign="top"> no </td>
 <td valign="top"> query </td>
 <td valign="top"> 
-<code></code>
+<code>10</code>
 </td>
 <td valign="top">
 <pre><code>{
