@@ -64,7 +64,7 @@ Find an object in this Collection by _id.
 
 <table>
 <tr>
-<th> name </th>
+<th> status code </th>
 <th> description </th>
 <th> headers </th>
 <th> schema </th>
@@ -77,8 +77,7 @@ Find an object in this Collection by _id.
 Returns the object resource found at this URL specified by id.
 </td>
 <td>
-<pre>
-
+<pre>""
 </pre>
 </td>
 <td>
@@ -104,8 +103,7 @@ Returns the object resource found at this URL specified by id.
 Request is malformed (i.e. invalid parameters).
 </td>
 <td>
-<pre>
-
+<pre>""
 </pre>
 </td>
 <td>
@@ -139,8 +137,7 @@ Request is malformed (i.e. invalid parameters).
 User is not authorized to run this operation.
 </td>
 <td>
-<pre>
-
+<pre>""
 </pre>
 </td>
 <td>
@@ -174,8 +171,7 @@ User is not authorized to run this operation.
 Collection resource cannot be found by the supplied _id.
 </td>
 <td>
-<pre>
-
+<pre>""
 </pre>
 </td>
 <td>
@@ -209,8 +205,7 @@ Collection resource cannot be found by the supplied _id.
 There was an unexpected internal error processing this request.
 </td>
 <td>
-<pre>
-
+<pre>""
 </pre>
 </td>
 <td>
