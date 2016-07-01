@@ -145,17 +145,18 @@ Find objects in this Collection.
 <th> schema </th>
 </tr>
 <tr>
+<td>
 
-</tr>
-<tr>
+</td>
+<td>
 Returns an array of objects. Each object has an _id and possible additional properties.
-</tr>
-<tr>
+</td>
+<td>
 <pre>
 Returns an array of objects. Each object has an _id and possible additional properties.
 </pre>
-</tr>
-<tr>
+</td>
+<td>
 <pre><code>{
   "type": "array",
   "items": {
@@ -171,19 +172,21 @@ Returns an array of objects. Each object has an _id and possible additional prop
   }
 }
 </code></pre>
+</td>
 </tr>
 <tr>
+<td>
 
-</tr>
-<tr>
+</td>
+<td>
 Request is malformed (i.e. invalid parameters).
-</tr>
-<tr>
+</td>
+<td>
 <pre>
 Request is malformed (i.e. invalid parameters).
 </pre>
-</tr>
-<tr>
+</td>
+<td>
 <pre><code>{
   "type": "object",
   "properties": {
@@ -204,19 +207,21 @@ Request is malformed (i.e. invalid parameters).
   ]
 }
 </code></pre>
+</td>
 </tr>
 <tr>
+<td>
 
-</tr>
-<tr>
+</td>
+<td>
 User is not authorized to run this operation.
-</tr>
-<tr>
+</td>
+<td>
 <pre>
 User is not authorized to run this operation.
 </pre>
-</tr>
-<tr>
+</td>
+<td>
 <pre><code>{
   "type": "object",
   "properties": {
@@ -237,19 +242,21 @@ User is not authorized to run this operation.
   ]
 }
 </code></pre>
+</td>
 </tr>
 <tr>
+<td>
 
-</tr>
-<tr>
+</td>
+<td>
 There was an unexpected internal error processing this request.
-</tr>
-<tr>
+</td>
+<td>
 <pre>
 There was an unexpected internal error processing this request.
 </pre>
-</tr>
-<tr>
+</td>
+<td>
 <pre><code>{
   "type": "object",
   "properties": {
@@ -270,6 +277,7 @@ There was an unexpected internal error processing this request.
   ]
 }
 </code></pre>
+</td>
 </tr>
 </table>
 
