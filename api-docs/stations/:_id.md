@@ -71,14 +71,14 @@ Find an object in this Collection by _id.
 </tr>
 <tr>
 <td>
-
+200
 </td>
 <td>
 Returns the object resource found at this URL specified by id.
 </td>
 <td>
 <pre>
-Returns the object resource found at this URL specified by id.
+
 </pre>
 </td>
 <td>
@@ -98,49 +98,14 @@ Returns the object resource found at this URL specified by id.
 </tr>
 <tr>
 <td>
-
-</td>
-<td>
-Collection resource cannot be found by the supplied _id.
-</td>
-<td>
-<pre>
-Collection resource cannot be found by the supplied _id.
-</pre>
-</td>
-<td>
-<pre><code>{
-  "type": "object",
-  "properties": {
-    "code": {
-      "type": "integer"
-    },
-    "description": {
-      "type": "string"
-    },
-    "message": {
-      "type": "string"
-    }
-  },
-  "required": [
-    "code",
-    "description",
-    "message"
-  ]
-}
-</code></pre>
-</td>
-</tr>
-<tr>
-<td>
-
+400
 </td>
 <td>
 Request is malformed (i.e. invalid parameters).
 </td>
 <td>
 <pre>
-Request is malformed (i.e. invalid parameters).
+
 </pre>
 </td>
 <td>
@@ -168,14 +133,14 @@ Request is malformed (i.e. invalid parameters).
 </tr>
 <tr>
 <td>
-
+403
 </td>
 <td>
 User is not authorized to run this operation.
 </td>
 <td>
 <pre>
-User is not authorized to run this operation.
+
 </pre>
 </td>
 <td>
@@ -203,14 +168,49 @@ User is not authorized to run this operation.
 </tr>
 <tr>
 <td>
+404
+</td>
+<td>
+Collection resource cannot be found by the supplied _id.
+</td>
+<td>
+<pre>
 
+</pre>
+</td>
+<td>
+<pre><code>{
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "code",
+    "description",
+    "message"
+  ]
+}
+</code></pre>
+</td>
+</tr>
+<tr>
+<td>
+500
 </td>
 <td>
 There was an unexpected internal error processing this request.
 </td>
 <td>
 <pre>
-There was an unexpected internal error processing this request.
+
 </pre>
 </td>
 <td>

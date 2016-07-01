@@ -146,14 +146,14 @@ Find objects in this Collection.
 </tr>
 <tr>
 <td>
-
+200
 </td>
 <td>
 Returns an array of objects. Each object has an _id and possible additional properties.
 </td>
 <td>
 <pre>
-Returns an array of objects. Each object has an _id and possible additional properties.
+
 </pre>
 </td>
 <td>
@@ -176,14 +176,14 @@ Returns an array of objects. Each object has an _id and possible additional prop
 </tr>
 <tr>
 <td>
-
+400
 </td>
 <td>
 Request is malformed (i.e. invalid parameters).
 </td>
 <td>
 <pre>
-Request is malformed (i.e. invalid parameters).
+
 </pre>
 </td>
 <td>
@@ -211,14 +211,14 @@ Request is malformed (i.e. invalid parameters).
 </tr>
 <tr>
 <td>
-
+403
 </td>
 <td>
 User is not authorized to run this operation.
 </td>
 <td>
 <pre>
-User is not authorized to run this operation.
+
 </pre>
 </td>
 <td>
@@ -246,14 +246,14 @@ User is not authorized to run this operation.
 </tr>
 <tr>
 <td>
-
+500
 </td>
 <td>
 There was an unexpected internal error processing this request.
 </td>
 <td>
 <pre>
-There was an unexpected internal error processing this request.
+
 </pre>
 </td>
 <td>
