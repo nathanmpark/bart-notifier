@@ -6,7 +6,7 @@ An API to query up-to-date arrival times and schedule arrival notifications
 
 <pre>
 
-Usage: bns <command> [options]
+Usage: bns &lt;command&gt; [options]
 
 command     
   seed-db             clear and reinitialize the database
