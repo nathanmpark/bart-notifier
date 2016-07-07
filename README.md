@@ -6,14 +6,14 @@ An API to query up-to-date arrival times and schedule arrival notifications
 
 <pre>
 
-[1mUsage:[22m /Users/Greg/.pyenv/versions/2.7.10/envs/carbonio-dev-env/bin/node bns gen-static-docs[34m [options][39m
+Usage: /Users/Greg/.pyenv/versions/2.7.10/envs/carbonio-dev-env/bin/node bns gen-static-docs [options]
 
-[34mOptions:[39m
-   -v VERBOSITY, --verbosity VERBOSITY   [90mverbosity level (trace | debug | info | warn | error | fatal)[39m
-   --flavor FLAVOR                       [90mchoose your flavor (github-flavored-markdown | api-blueprint | aglio)  [github-flavored-markdown][39m
-   --out PATH                            [90mpath to write static docs to (directory for multiple pages (default: api-docs) and file for single page (default: README.md))[39m
-   -o OPTION, --option OPTION            [90mset generator specific options (format is: option[:value](,option[:value])*, can be specified multiple times)[39m
-   --show-options                        [90mshow generatore specific options[39m
+Options:
+   -v VERBOSITY, --verbosity VERBOSITY   verbosity level (trace | debug | info | warn | error | fatal)
+   --flavor FLAVOR                       choose your flavor (github-flavored-markdown | api-blueprint | aglio)  [github-flavored-markdown]
+   --out PATH                            path to write static docs to (directory for multiple pages (default: api-docs) and file for single page (default: README.md))
+   -o OPTION, --option OPTION            set generator specific options (format is: option[:value](,option[:value])*, can be specified multiple times)
+   --show-options                        show generatore specific options
 
 generate docs for the api
 </pre>
