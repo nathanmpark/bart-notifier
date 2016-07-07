@@ -3,14 +3,29 @@
 
 An API to query up-to-date arrival times and schedule arrival notifications
 
----
-* <a name="stations-toc"></a> [/stations](#stations) [<a name="-get-toc"></a>[GET](#-get)]
-* <a name="stations--_id-toc"></a> [/stations/:_id](#stations--_id) [<a name="-get-toc"></a>[GET](#-get)]
-* <a name="stations--_id-destinations-toc"></a> [/stations/:_id/destinations](#stations--_id-destinations) [<a name="-get-toc"></a>[GET](#-get)]
-* <a name="stations--_id-arrivals-toc"></a> [/stations/:_id/arrivals](#stations--_id-arrivals) [<a name="-get-toc"></a>[GET](#-get)]
-* <a name="notifications-toc"></a> [/notifications](#notifications) [<a name="-get-toc"></a>[GET](#-get)] [<a name="-post-toc"></a>[POST](#-post)] [<a name="-delete-toc"></a>[DELETE](#-delete)]
-* <a name="notifications--id-toc"></a> [/notifications/:id](#notifications--id) [<a name="-get-toc"></a>[GET](#-get)] [<a name="-patch-toc"></a>[PATCH](#-patch)] [<a name="-delete-toc"></a>[DELETE](#-delete)]
 
+<pre>
+
+[1mUsage:[22m /Users/Greg/.pyenv/versions/2.7.10/envs/carbonio-dev-env/bin/node bns gen-static-docs[34m [options][39m
+
+[34mOptions:[39m
+   -v VERBOSITY, --verbosity VERBOSITY   [90mverbosity level (trace | debug | info | warn | error | fatal)[39m
+   --flavor FLAVOR                       [90mchoose your flavor (github-flavored-markdown | api-blueprint | aglio)  [github-flavored-markdown][39m
+   --out PATH                            [90mpath to write static docs to (directory for multiple pages (default: api-docs) and file for single page (default: README.md))[39m
+   -o OPTION, --option OPTION            [90mset generator specific options (format is: option[:value](,option[:value])*, can be specified multiple times)[39m
+   --show-options                        [90mshow generatore specific options[39m
+
+generate docs for the api
+</pre>
+
+---
+* <a name="stations-toc"></a> [/stations](#stations)
+ [<a name="-get-toc"></a>[GET](#-get)]* <a name="stations--_id-toc"></a> [/stations/:_id](#stations--_id)
+ [<a name="-get-toc"></a>[GET](#-get)]* <a name="stations--_id-destinations-toc"></a> [/stations/:_id/destinations](#stations--_id-destinations)
+ [<a name="-get-toc"></a>[GET](#-get)]* <a name="stations--_id-arrivals-toc"></a> [/stations/:_id/arrivals](#stations--_id-arrivals)
+ [<a name="-get-toc"></a>[GET](#-get)]* <a name="notifications-toc"></a> [/notifications](#notifications)
+ [<a name="-get-toc"></a>[GET](#-get)] [<a name="-post-toc"></a>[POST](#-post)] [<a name="-delete-toc"></a>[DELETE](#-delete)]* <a name="notifications--id-toc"></a> [/notifications/:id](#notifications--id)
+ [<a name="-get-toc"></a>[GET](#-get)] [<a name="-patch-toc"></a>[PATCH](#-patch)] [<a name="-delete-toc"></a>[DELETE](#-delete)]
 
 ---
 
@@ -36,7 +51,6 @@ Find objects in this Collection.
 </tr>
 
 
-
 <tr>
 <td valign="top"> query </td>
 <td valign="top"> Query spec (JSON) </td>
@@ -51,8 +65,6 @@ Find objects in this Collection.
 }</code></pre>
 </td>
 </tr>
-
-
 
 
 <tr>
@@ -71,8 +83,6 @@ Find objects in this Collection.
 </tr>
 
 
-
-
 <tr>
 <td valign="top"> sort </td>
 <td valign="top"> Sort spec (JSON) </td>
@@ -87,8 +97,6 @@ Find objects in this Collection.
 }</code></pre>
 </td>
 </tr>
-
-
 
 
 <tr>
@@ -107,8 +115,6 @@ Find objects in this Collection.
 </tr>
 
 
-
-
 <tr>
 <td valign="top"> skip </td>
 <td valign="top"> Results to skip </td>
@@ -125,8 +131,6 @@ Find objects in this Collection.
 </tr>
 
 
-
-
 <tr>
 <td valign="top"> limit </td>
 <td valign="top"> Results to limit </td>
@@ -141,7 +145,6 @@ Find objects in this Collection.
 }</code></pre>
 </td>
 </tr>
-
 
 
 
@@ -315,7 +318,6 @@ Find an object in this Collection by _id.
 </tr>
 
 
-
 <tr>
 <td valign="top"> _id </td>
 <td valign="top"> Object _id </td>
@@ -327,8 +329,6 @@ Find an object in this Collection by _id.
 <td valign="top">
 <code>null</code></td>
 </tr>
-
-
 
 
 
@@ -346,7 +346,6 @@ Find an object in this Collection by _id.
 }</code></pre>
 </td>
 </tr>
-
 
 
 
@@ -551,7 +550,6 @@ Retrieve a list of valid destinations for a particular station.
 </tr>
 
 
-
 <tr>
 <td valign="top"> _id </td>
 <td valign="top"> Object _id </td>
@@ -563,7 +561,6 @@ Retrieve a list of valid destinations for a particular station.
 <td valign="top">
 <code>null</code></td>
 </tr>
-
 
 
 
@@ -595,7 +592,6 @@ Retrieve a list of estimated arrival times for a particular station
 </tr>
 
 
-
 <tr>
 <td valign="top"> _id </td>
 <td valign="top"> Object _id </td>
@@ -607,8 +603,6 @@ Retrieve a list of estimated arrival times for a particular station
 <td valign="top">
 <code>null</code></td>
 </tr>
-
-
 
 
 
@@ -627,7 +621,6 @@ Retrieve a list of estimated arrival times for a particular station
 }</code></pre>
 </td>
 </tr>
-
 
 
 
@@ -659,7 +652,6 @@ List active arrival notifications.
 </tr>
 
 
-
 <tr>
 <td valign="top"> destination </td>
 <td valign="top"> Filter results by destination. </td>
@@ -675,8 +667,6 @@ List active arrival notifications.
 }</code></pre>
 </td>
 </tr>
-
-
 
 
 <tr>
@@ -696,8 +686,6 @@ List active arrival notifications.
 </tr>
 
 
-
-
 <tr>
 <td valign="top"> limit </td>
 <td valign="top"> Limit the number of results returned. </td>
@@ -713,7 +701,6 @@ List active arrival notifications.
 }</code></pre>
 </td>
 </tr>
-
 
 
 
@@ -739,7 +726,6 @@ Create a new notification.
 <th> default </th>
 <th> schema </th>
 </tr>
-
 
 
 <tr>
@@ -790,7 +776,6 @@ Create a new notification.
 
 
 
-
 </table>
 
 
@@ -825,7 +810,6 @@ Retrieve a specific notification.
 </tr>
 
 
-
 <tr>
 <td valign="top"> id </td>
 <td valign="top"> id </td>
@@ -837,8 +821,6 @@ Retrieve a specific notification.
 <td valign="top">
 <code>null</code></td>
 </tr>
-
-
 
 
 
@@ -857,7 +839,6 @@ Retrieve a specific notification.
 }</code></pre>
 </td>
 </tr>
-
 
 
 
@@ -885,7 +866,6 @@ Update a notification.
 </tr>
 
 
-
 <tr>
 <td valign="top"> id </td>
 <td valign="top"> id </td>
@@ -897,8 +877,6 @@ Update a notification.
 <td valign="top">
 <code>null</code></td>
 </tr>
-
-
 
 
 
@@ -945,8 +923,6 @@ Update a notification.
 
 
 
-
-
 <tr>
 <td valign="top"> bart-key </td>
 <td valign="top"> test header </td>
@@ -961,7 +937,6 @@ Update a notification.
 }</code></pre>
 </td>
 </tr>
-
 
 
 
@@ -989,7 +964,6 @@ Cancel a specific notification.
 </tr>
 
 
-
 <tr>
 <td valign="top"> id </td>
 <td valign="top"> id </td>
@@ -1001,7 +975,6 @@ Cancel a specific notification.
 <td valign="top">
 <code>null</code></td>
 </tr>
-
 
 
 
