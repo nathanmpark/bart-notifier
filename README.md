@@ -20,12 +20,12 @@ generate docs for the api
 
 ---
 * <a name="stations-toc"></a> [/stations](#stations)
- [<a name="-get-toc"></a>[GET](#-get)]* <a name="stations--_id-toc"></a> [/stations/:_id](#stations--_id)
- [<a name="-get-toc"></a>[GET](#-get)]* <a name="stations--_id-destinations-toc"></a> [/stations/:_id/destinations](#stations--_id-destinations)
- [<a name="-get-toc"></a>[GET](#-get)]* <a name="stations--_id-arrivals-toc"></a> [/stations/:_id/arrivals](#stations--_id-arrivals)
- [<a name="-get-toc"></a>[GET](#-get)]* <a name="notifications-toc"></a> [/notifications](#notifications)
- [<a name="-get-toc"></a>[GET](#-get)] [<a name="-post-toc"></a>[POST](#-post)] [<a name="-delete-toc"></a>[DELETE](#-delete)]* <a name="notifications--id-toc"></a> [/notifications/:id](#notifications--id)
- [<a name="-get-toc"></a>[GET](#-get)] [<a name="-patch-toc"></a>[PATCH](#-patch)] [<a name="-delete-toc"></a>[DELETE](#-delete)]
+* <a name="stations--_id-toc"></a> [/stations/:_id](#stations--_id)
+* <a name="stations--_id-destinations-toc"></a> [/stations/:_id/destinations](#stations--_id-destinations)
+* <a name="stations--_id-arrivals-toc"></a> [/stations/:_id/arrivals](#stations--_id-arrivals)
+* <a name="notifications-toc"></a> [/notifications](#notifications)
+* <a name="notifications--id-toc"></a> [/notifications/:id](#notifications--id)
+
 
 ---
 
