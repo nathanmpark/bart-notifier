@@ -43,7 +43,7 @@ generate docs for the api
 ## <a name="stations"></a>/stations [[&#x2191;](#stations-toc)]
 
 get station information
-### <a name="-get"></a>`GET` --   [[&#x2191;](#-get-toc)]
+### <a name="stations-get"></a>`GET` -- /stations  [[&#x2191;](#stations-get-toc)]
 
 Find objects in this Collection.
 ### Parameters
@@ -310,7 +310,7 @@ There was an unexpected internal error processing this request.
 ## <a name="stations--_id"></a>/stations/:_id [[&#x2191;](#stations--_id-toc)]
 
 
-### <a name="-get"></a>`GET` --   [[&#x2191;](#-get-toc)]
+### <a name="stations--_id-get"></a>`GET` -- /stations/:_id  [[&#x2191;](#stations--_id-get-toc)]
 
 Find an object in this Collection by _id.
 ### Parameters
@@ -542,7 +542,7 @@ There was an unexpected internal error processing this request.
 ## <a name="stations--_id-destinations"></a>/stations/:_id/destinations [[&#x2191;](#stations--_id-destinations-toc)]
 
 Per station destinations.
-### <a name="-get"></a>`GET` --   [[&#x2191;](#-get-toc)]
+### <a name="stations--_id-destinations-get"></a>`GET` -- /stations/:_id/destinations  [[&#x2191;](#stations--_id-destinations-get-toc)]
 
 Retrieve a list of valid destinations for a particular station.
 ### Parameters
@@ -584,7 +584,7 @@ Retrieve a list of valid destinations for a particular station.
 ## <a name="stations--_id-arrivals"></a>/stations/:_id/arrivals [[&#x2191;](#stations--_id-arrivals-toc)]
 
 Per station estimated arrival times.
-### <a name="-get"></a>`GET` --   [[&#x2191;](#-get-toc)]
+### <a name="stations--_id-arrivals-get"></a>`GET` -- /stations/:_id/arrivals  [[&#x2191;](#stations--_id-arrivals-get-toc)]
 
 Retrieve a list of estimated arrival times for a particular station
 ### Parameters
@@ -644,7 +644,7 @@ Retrieve a list of estimated arrival times for a particular station
 ## <a name="notifications"></a>/notifications [[&#x2191;](#notifications-toc)]
 
 Arrival notifications.
-### <a name="-get"></a>`GET` --   [[&#x2191;](#-get-toc)]
+### <a name="notifications-get"></a>`GET` -- /notifications  [[&#x2191;](#notifications-get-toc)]
 
 List active arrival notifications.
 ### Parameters
@@ -720,7 +720,7 @@ List active arrival notifications.
 
 
 
-### <a name="-post"></a>`POST` --   [[&#x2191;](#-post-toc)]
+### <a name="notifications-post"></a>`POST` -- /notifications  [[&#x2191;](#notifications-post-toc)]
 
 Create a new notification.
 ### Parameters
@@ -792,7 +792,7 @@ Create a new notification.
 
 
 
-### <a name="-delete"></a>`DELETE` --   [[&#x2191;](#-delete-toc)]
+### <a name="notifications-delete"></a>`DELETE` -- /notifications  [[&#x2191;](#notifications-delete-toc)]
 
 Cancel all active notifications.
 
@@ -802,7 +802,7 @@ Cancel all active notifications.
 ## <a name="notifications--id"></a>/notifications/:id [[&#x2191;](#notifications--id-toc)]
 
 Arrival notification details.
-### <a name="-get"></a>`GET` --   [[&#x2191;](#-get-toc)]
+### <a name="notifications--id-get"></a>`GET` -- /notifications/:id  [[&#x2191;](#notifications--id-get-toc)]
 
 Retrieve a specific notification.
 ### Parameters
@@ -858,7 +858,7 @@ Retrieve a specific notification.
 
 
 
-### <a name="-patch"></a>`PATCH` --   [[&#x2191;](#-patch-toc)]
+### <a name="notifications--id-patch"></a>`PATCH` -- /notifications/:id  [[&#x2191;](#notifications--id-patch-toc)]
 
 Update a notification.
 ### Parameters
@@ -956,7 +956,7 @@ Update a notification.
 
 
 
-### <a name="-delete"></a>`DELETE` --   [[&#x2191;](#-delete-toc)]
+### <a name="notifications--id-delete"></a>`DELETE` -- /notifications/:id  [[&#x2191;](#notifications--id-delete-toc)]
 
 Cancel a specific notification.
 ### Parameters
