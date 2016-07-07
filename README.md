@@ -20,21 +20,21 @@ generate docs for the api
 
 ---
 * <a name="stations-toc"></a> [/stations](#stations)
-    * <a name="stations-get-toc"></a> [`GET`](stations-get)
+    * <a name="stations-get-toc"></a> [`GET`](#stations-get)
 * <a name="stations--_id-toc"></a> [/stations/:_id](#stations--_id)
-    * <a name="stations--_id-get-toc"></a> [`GET`](stations--_id-get)
+    * <a name="stations--_id-get-toc"></a> [`GET`](#stations--_id-get)
 * <a name="stations--_id-destinations-toc"></a> [/stations/:_id/destinations](#stations--_id-destinations)
-    * <a name="stations--_id-destinations-get-toc"></a> [`GET`](stations--_id-destinations-get)
+    * <a name="stations--_id-destinations-get-toc"></a> [`GET`](#stations--_id-destinations-get)
 * <a name="stations--_id-arrivals-toc"></a> [/stations/:_id/arrivals](#stations--_id-arrivals)
-    * <a name="stations--_id-arrivals-get-toc"></a> [`GET`](stations--_id-arrivals-get)
+    * <a name="stations--_id-arrivals-get-toc"></a> [`GET`](#stations--_id-arrivals-get)
 * <a name="notifications-toc"></a> [/notifications](#notifications)
-    * <a name="notifications-get-toc"></a> [`GET`](notifications-get)
-    * <a name="notifications-post-toc"></a> [`POST`](notifications-post)
-    * <a name="notifications-delete-toc"></a> [`DELETE`](notifications-delete)
+    * <a name="notifications-get-toc"></a> [`GET`](#notifications-get)
+    * <a name="notifications-post-toc"></a> [`POST`](#notifications-post)
+    * <a name="notifications-delete-toc"></a> [`DELETE`](#notifications-delete)
 * <a name="notifications--id-toc"></a> [/notifications/:id](#notifications--id)
-    * <a name="notifications--id-get-toc"></a> [`GET`](notifications--id-get)
-    * <a name="notifications--id-patch-toc"></a> [`PATCH`](notifications--id-patch)
-    * <a name="notifications--id-delete-toc"></a> [`DELETE`](notifications--id-delete)
+    * <a name="notifications--id-get-toc"></a> [`GET`](#notifications--id-get)
+    * <a name="notifications--id-patch-toc"></a> [`PATCH`](#notifications--id-patch)
+    * <a name="notifications--id-delete-toc"></a> [`DELETE`](#notifications--id-delete)
 
 
 ---
