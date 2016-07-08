@@ -6,16 +6,25 @@ An API to query up-to-date arrival times and schedule arrival notifications
 
 <pre>
 
-Usage: /Users/Greg/.pyenv/versions/2.7.10/envs/carbonio-dev-env/bin/node bns gen-static-docs [options]
+Usage: bns &lt;command&gt; [options]
+
+command     
+  seed-db             clear and reinitialize the database
+  clear-db            clear the database
+  start-server        start the api server
+  gen-static-docs     generate docs for the api
+  test                run the test suite (Service.testSuite)
 
 Options:
    -v VERBOSITY, --verbosity VERBOSITY   verbosity level (trace | debug | info | warn | error | fatal)
-   --flavor FLAVOR                       choose your flavor (github-flavored-markdown | api-blueprint | aglio)  [github-flavored-markdown]
-   --out PATH                            path to write static docs to (directory for multiple pages (default: api-docs) and file for single page (default: README.md))
-   -o OPTION, --option OPTION            set generator specific options (format is: option[:value](,option[:value])*, can be specified multiple times)
-   --show-options                        show generatore specific options
 
-generate docs for the api
+Environment variables: 
+  BART_NOTIFIER_DB_URI - the database uri
+  BART_NOTIFIER_BART_API_KEY - your BART API key
+  BART_NOTIFIER_TWILIO_API_KEY - your twilio API key
+  BART_NOTIFIER_TWILIO_SID - your twilio SID
+  BART_NOTIFIER_TWILIO_NUMBER - your twilio number
+
 </pre>
 
 
