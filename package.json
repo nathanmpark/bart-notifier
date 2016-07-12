@@ -2,7 +2,7 @@
     "name": "bart-notifier",
     "description": "Bart Notifier API",
     "dependencies": {
-        "carbon-io": "git+ssh://git@github.com:carbon-io/carbon-io.git#master",
+        "carbon-io": "git+ssh://git@github.com:carbon-io/carbon-io.git#v0.1.6",
         
         "leafnode": "git+ssh://git@github.com:objectlabs/leafnode.git#v3.2.0",
         "mongodb-uri": "git+ssh://git@github.com:mongolab/mongodb-uri-node.git#v0.9.7",

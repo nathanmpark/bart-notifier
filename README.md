@@ -32,10 +32,10 @@ Environment variables:
     * <a name="stations-get-toc"></a> [`GET`](#stations-get)
 * <a name="stations--_id-toc"></a> [/stations/:_id](#stations--_id)
     * <a name="stations--_id-get-toc"></a> [`GET`](#stations--_id-get)
-* <a name="stations--_id-destinations-toc"></a> [/stations/:_id/destinations](#stations--_id-destinations)
-    * <a name="stations--_id-destinations-get-toc"></a> [`GET`](#stations--_id-destinations-get)
-* <a name="stations--_id-arrivals-toc"></a> [/stations/:_id/arrivals](#stations--_id-arrivals)
-    * <a name="stations--_id-arrivals-get-toc"></a> [`GET`](#stations--_id-arrivals-get)
+* <a name="stations--_id--id-destinations-toc"></a> [/stations/:_id/:id/destinations](#stations--_id--id-destinations)
+    * <a name="stations--_id--id-destinations-get-toc"></a> [`GET`](#stations--_id--id-destinations-get)
+* <a name="stations--_id--id-arrivals-toc"></a> [/stations/:_id/:id/arrivals](#stations--_id--id-arrivals)
+    * <a name="stations--_id--id-arrivals-get-toc"></a> [`GET`](#stations--_id--id-arrivals-get)
 * <a name="notifications-toc"></a> [/notifications](#notifications)
     * <a name="notifications-get-toc"></a> [`GET`](#notifications-get)
     * <a name="notifications-post-toc"></a> [`POST`](#notifications-post)
@@ -548,10 +548,10 @@ There was an unexpected internal error processing this request.
 </tr>
 </table>
 
-## <a name="stations--_id-destinations"></a>/stations/:_id/destinations [[&#x2191;](#stations--_id-destinations-toc)]
+## <a name="stations--_id--id-destinations"></a>/stations/:_id/:id/destinations [[&#x2191;](#stations--_id--id-destinations-toc)]
 
 Per station destinations.
-### <a name="stations--_id-destinations-get"></a>`GET` -- /stations/:_id/destinations  [[&#x2191;](#stations--_id-destinations-get-toc)]
+### <a name="stations--_id--id-destinations-get"></a>`GET` -- /stations/:_id/:id/destinations  [[&#x2191;](#stations--_id--id-destinations-get-toc)]
 
 Retrieve a list of valid destinations for a particular station.
 ### Parameters
@@ -582,6 +582,19 @@ Retrieve a list of valid destinations for a particular station.
 </tr>
 
 
+<tr>
+<td valign="top"> id </td>
+<td valign="top"> id </td>
+<td valign="top"> yes </td>
+<td valign="top"> path </td>
+<td valign="top">
+<code>null</code>
+</td>
+<td valign="top">
+<code>null</code></td>
+</tr>
+
+
 
 </table>
 
@@ -590,10 +603,10 @@ Retrieve a list of valid destinations for a particular station.
 
 
 
-## <a name="stations--_id-arrivals"></a>/stations/:_id/arrivals [[&#x2191;](#stations--_id-arrivals-toc)]
+## <a name="stations--_id--id-arrivals"></a>/stations/:_id/:id/arrivals [[&#x2191;](#stations--_id--id-arrivals-toc)]
 
 Per station estimated arrival times.
-### <a name="stations--_id-arrivals-get"></a>`GET` -- /stations/:_id/arrivals  [[&#x2191;](#stations--_id-arrivals-get-toc)]
+### <a name="stations--_id--id-arrivals-get"></a>`GET` -- /stations/:_id/:id/arrivals  [[&#x2191;](#stations--_id--id-arrivals-get-toc)]
 
 Retrieve a list of estimated arrival times for a particular station
 ### Parameters
@@ -614,6 +627,19 @@ Retrieve a list of estimated arrival times for a particular station
 <tr>
 <td valign="top"> _id </td>
 <td valign="top"> Object _id </td>
+<td valign="top"> yes </td>
+<td valign="top"> path </td>
+<td valign="top">
+<code>null</code>
+</td>
+<td valign="top">
+<code>null</code></td>
+</tr>
+
+
+<tr>
+<td valign="top"> id </td>
+<td valign="top"> id </td>
 <td valign="top"> yes </td>
 <td valign="top"> path </td>
 <td valign="top">
