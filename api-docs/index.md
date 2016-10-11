@@ -32,8 +32,8 @@ Environment variables:
 
 * [/stations](/api-docs/stations.md) 
 * [/stations/:_id](/api-docs/stations/:_id.md) 
-* [/stations/:_id/destinations](/api-docs/stations/:_id/destinations.md) 
-* [/stations/:_id/arrivals](/api-docs/stations/:_id/arrivals.md) 
+* [/stations/:_id/:id/destinations](/api-docs/stations/:_id/:id/destinations.md) 
+* [/stations/:_id/:id/arrivals](/api-docs/stations/:_id/:id/arrivals.md) 
 * [/notifications](/api-docs/notifications.md) 
 * [/notifications/:id](/api-docs/notifications/:id.md) 
 
