@@ -13,7 +13,6 @@ command
   clear-db            clear the database
   start-server        start the api server
   gen-static-docs     generate docs for the api
-  test                run the test suite (Service.testSuite)
 
 Options:
    -v VERBOSITY, --verbosity VERBOSITY   verbosity level (trace | debug | info | warn | error | fatal)
@@ -119,8 +118,8 @@ Find objects in this Collection.
 
 
 <tr>
-<td valign="top"> fields </td>
-<td valign="top"> Fields spec (JSON) </td>
+<td valign="top"> projection </td>
+<td valign="top"> Projection spec (JSON) </td>
 <td valign="top"> no </td>
 <td valign="top"> query </td>
 <td valign="top">
